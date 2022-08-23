@@ -17,8 +17,4 @@ public class MathFunction {
     public static double sum(double first, double second) {
         return first + second;
     }
-
-    public static double total1(double sum, double multiply, double difference, double division) {
-        return sum + multiply + difference + division;
-    }
 }
