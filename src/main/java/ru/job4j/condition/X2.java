@@ -35,5 +35,6 @@ public class X2 {
         int x4 = 1;
         int rsl4 = X2.calc(a4, b4, c4, x4);
         System.out.println(rsl4);
+
     }
 }
