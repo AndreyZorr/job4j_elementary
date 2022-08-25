@@ -6,7 +6,8 @@ import org.junit.Test;
 public class X2Test {
 
     @Test
-    public void calc1() {
+    public void whenA1B1C1X1Then3() {
+
         int a1 = 1;
         int b1 = 1;
         int c1 = 1;
@@ -17,7 +18,8 @@ public class X2Test {
     }
 
     @Test
-    public void calc2() {
+    public void whenA0B1C1X1Then2() {
+
         int a2 = 0;
         int b2 = 1;
         int c2 = 1;
@@ -28,7 +30,8 @@ public class X2Test {
     }
 
     @Test
-    public void calc3() {
+    public void whenA1B1C0X1Then2() {
+
         int a3 = 1;
         int b3 = 1;
         int c3 = 0;
@@ -39,13 +42,15 @@ public class X2Test {
     }
 
     @Test
-    public void calc4() {
-        int a4 = 0;
+    public void whenA1B1C1X0Then2() {
+
+        int a4 = 1;
         int b4 = 1;
         int c4 = 1;
-        int x4 = 1;
-        int expected4 = 2;
+        int x4 = 0;
+        int expected4 = 1;
         int rsl4 = X2.calc(a4, b4, c4, x4);
         Assert.assertEquals(expected4, rsl4);
     }
+
 }
