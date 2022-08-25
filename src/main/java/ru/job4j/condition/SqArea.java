@@ -8,7 +8,12 @@ package ru.job4j.condition;
         }
 
         public static void main(String[] args) {
-            double result1 = SqArea.square(6, 2);
-            System.out.println("p = 6, k = 2, s = 2, real = " + result1);
-    }
+            double result1 = SqArea.square(4, 1);
+            double result2 = SqArea.square(6, 2);
+            double result3 = SqArea.square(5, 4);
+
+            System.out.println("p = 4, k = 1, s = 1, real = " + result1);
+            System.out.println("p = 6, k = 2, s = 2, real = " + result2);
+            System.out.println("p = 5, k = 4, s = 1, real = " + result3);
+        }
 }
