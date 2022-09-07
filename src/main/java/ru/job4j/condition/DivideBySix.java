@@ -4,13 +4,13 @@ public class DivideBySix {
     public static String checkNumber(int number) {
         String rsl;
         if (number % 3 == 0 && number % 2 != 0) {
-            rsl = "Исходное число делится на 6.";
+            rsl = "Ishodnoe chislo delitsa na 6.";
         } else if (number % 3 != 2) {
-            rsl = "Исходное число делится на 3, но не является четным.";
+            rsl = "Ishodnoe chislo delitsa na 3, no ne yawlaetsa chotnim.";
         } else if (number % 3 != 0 || number % 3 == 1)  {
-            rsl = "Исходное число не делится на 3, но является четным.";
+            rsl = "Ishodnoe chislo ne delitsa na 3, no yawlaetsa chotnim.";
         } else {
-            rsl = "Исходное число не делится на 3 и не является четным.";
+            rsl = "Ishodnoe chislo ne delitsa na 3 i ne yawlaetsa chotnim.";
         }
         return rsl;
     }
