@@ -5,12 +5,12 @@ public class DivideBySix {
         String rsl;
         if (number % 3 == 0 && number % 2 != 0) {
             rsl = "Ishodnoe chislo delitsa na 6.";
-        } else if (number % 3 != 2) {
+        } else if (number % 3 == 0) {
             rsl = "Ishodnoe chislo delitsa na 3, no ne yawlaetsa chotnim.";
-        } else if (number % 3 != 0 || number % 3 == 1)  {
+        } else if (number % 2 == 0)  {
             rsl = "Ishodnoe chislo ne delitsa na 3, no yawlaetsa chotnim.";
         } else {
-            rsl = "Ishodnoe chislo ne delitsa na 3 i ne yawlaetsa chotnim.";
+            rsl = "Ishodnoe chislo delitsa na 3, no ne yawlaetsa chotnim.";
         }
         return rsl;
     }
