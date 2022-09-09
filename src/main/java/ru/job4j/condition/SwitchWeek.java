@@ -8,10 +8,10 @@ public class SwitchWeek {
                 name = "Понедельник.";
                 break;
             case 2:
-                name = "Вторик.";
+                name = "Вторник.";
                 break;
             case 3:
-                name = "Срада.";
+                name = "Среда.";
                 break;
             case 4:
                 name = "Четверг.";
