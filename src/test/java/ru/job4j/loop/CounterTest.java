@@ -11,6 +11,15 @@ public class CounterTest {
         int finish = 10;
         int result = Counter.sumByEven(start, finish);
         int expected = 30;
-       assertThat(result).isEqualTo(expected);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenSumEvenNumbersFromTwoToTwentyThenOneHundredAndTen() {
+        int start = 2;
+        int finish = 20;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 110;
+        assertThat(result).isEqualTo(expected);
     }
 }
