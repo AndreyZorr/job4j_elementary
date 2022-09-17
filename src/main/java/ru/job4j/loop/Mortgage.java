@@ -8,6 +8,6 @@ public class Mortgage {
             amount = amount - salary;
             year++;
         }
-            return year;
-        }
+        return year;
+    }
 }
