@@ -12,7 +12,7 @@ public class TurnTest {
         assertThat(result).containsExactly(expected);
     }
 
-    @Test
+      @Test
     public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
         int[] input = new int[] {1, 2, 3, 4, 5};
         int[] result = Turn.back(input);
