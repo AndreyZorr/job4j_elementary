@@ -6,7 +6,7 @@ public class RollBackArray {
         for (int index = 0; index < array.length; index++) {
             int lastIndex = array.length - 1;
             int currentIndex = lastIndex - index;
-            result[currentIndex] = array[lastIndex - index];
+            result[currentIndex] = array[currentIndex];
         }
         return result;
     }
