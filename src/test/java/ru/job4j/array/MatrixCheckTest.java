@@ -28,4 +28,3 @@ public class MatrixCheckTest {
         assertThat(result).isTrue();
     }
 }
-
