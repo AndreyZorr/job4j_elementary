@@ -25,6 +25,6 @@ public class MatrixCheckTest {
         };
         int row = 0;
         boolean result = MatrixCheck.monoHorizontal(input, row);
-        assertThat(result).isTrue();
+        assertThat(result).isFalse();
     }
 }
