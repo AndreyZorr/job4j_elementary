@@ -1,13 +1,23 @@
 package ru.job4j;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
 
-public class PalindromTest {
+import static org.assertj.core.api.Assertions.assertThat;
+
+class PalindromTest {
+
     @Test
-    public void isPalindrom() {
-        Palindrom.isPalindrome("abcdcba");
-        Palindrom.isPalindrome("abcd");
-
+    void isPalindrome() {
+        String str = "abcdcba";
+        boolean result = Palindrom.isPalindrome(str);
+        assertThat(result).isTrue();
     }
+
+    @Test
+    void isPalindromeNo() {
+        String str = "abcd";
+        boolean result = Palindrom.isPalindrome(str);
+        assertThat(result).isFalse();
+    }
+
 }
